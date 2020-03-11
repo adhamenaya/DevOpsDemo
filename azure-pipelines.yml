@@ -36,6 +36,6 @@ steps:
   inputs:
     apkFiles: '**/*.apk'
     jarsignerKeystoreFile: 'keystore2.jks'
-    jarsignerKeystorePassword: $(pass)
+    jarsignerKeystorePassword: $(password)
     jarsignerKeystoreAlias: 'key0'
-    jarsignerKeyPassword: $(pass)
+    jarsignerKeyPassword: $(password)

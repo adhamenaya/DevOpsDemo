@@ -39,3 +39,10 @@ steps:
     jarsignerKeystorePassword: $(password)
     jarsignerKeystoreAlias: 'key0'
     jarsignerKeyPassword: $(password)
+
+- task: CopyFiles@2
+inputs:
+    SourceFolder: $(Build.SourcesDirectory)
+    contents: '**/*.release.apk'
+    targetFolder: '$(build.artifactStagingDirectory)'
+    overWrite: true
